@@ -1,0 +1,186 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 15% 3%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 15% 3%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 15% 3%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 263 75% 40%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 240 30% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 15% 8%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 263 75% 40%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 15% 12%;
+    --input: 240 15% 12%;
+    --ring: 240 10% 83.9%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-outfit font-bold tracking-tight;
+  }
+  p,
+  li,
+  a,
+  button,
+  input,
+  textarea,
+  span {
+    @apply font-jakarta;
+  }
+}
+
+/* Custom font classes */
+.font-outfit {
+  font-family: var(--font-outfit);
+}
+
+.font-jakarta {
+  font-family: var(--font-jakarta);
+}
+
+/* Heading styles */
+.heading-gradient {
+  @apply bg-gradient-to-r from-purple-400 via-indigo-500 to-blue-500 bg-clip-text text-transparent;
+}
+
+.service-circle {
+  transition: all 0.5s ease;
+}
+
+.service-circle:hover {
+  transform: scale(1.1);
+  z-index: 10;
+}
+
+.glow {
+  filter: drop-shadow(0 0 10px rgba(139, 92, 246, 0.5));
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* Update the service-search-container class to ensure proper z-indexing */
+.service-search-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5; /* Ensure the service container is above the background animation */
+}
+
+.search-circle {
+  position: absolute;
+  border: 2px solid rgba(139, 92, 246, 0.3);
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  z-index: 6; /* Above the background animation */
+}
+
+.service-item {
+  position: absolute;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: rgba(26, 11, 46, 0.8);
+  border: 2px solid rgba(139, 92, 246, 0.5);
+  box-shadow: 0 0 15px rgba(139, 92, 246, 0.3);
+  z-index: 20; /* Ensure service items appear above the orbital animation */
+}
+
+/* Animated glow effect */
+.glow-effect {
+  position: relative;
+}
+
+.glow-effect::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(15px);
+  background: inherit;
+  z-index: -1;
+  opacity: 0.7;
+  border-radius: inherit;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    filter: blur(10px) brightness(1);
+  }
+  50% {
+    filter: blur(15px) brightness(1.2);
+  }
+}
