@@ -1,5 +1,13 @@
-import Link from "next/link"
-import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } from "lucide-react"
+import Link from "next/link";
+import {
+  Facebook,
+  Twitter,
+  Instagram,
+  Linkedin,
+  Mail,
+  Phone,
+  MapPin,
+} from "lucide-react";
 
 export default function Footer() {
   return (
@@ -11,22 +19,31 @@ export default function Footer() {
               ADFINITYHUB
             </h3>
             <p className="text-gray-400 mb-4">
-              Transforming businesses through innovative digital marketing solutions powered by AI.
+              Transforming businesses through innovative digital marketing
+              solutions powered by AI.
             </p>
             <div className="flex space-x-4">
-              <Link href="#" className="text-gray-400 hover:text-primary transition-colors">
+              <Link
+                href="#"
+                className="text-gray-400 hover:text-primary transition-colors">
                 <Facebook size={20} />
                 <span className="sr-only">Facebook</span>
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-primary transition-colors">
+              <Link
+                href="#"
+                className="text-gray-400 hover:text-primary transition-colors">
                 <Twitter size={20} />
                 <span className="sr-only">Twitter</span>
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-primary transition-colors">
+              <Link
+                href="#"
+                className="text-gray-400 hover:text-primary transition-colors">
                 <Instagram size={20} />
                 <span className="sr-only">Instagram</span>
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-primary transition-colors">
+              <Link
+                href="#"
+                className="text-gray-400 hover:text-primary transition-colors">
                 <Linkedin size={20} />
                 <span className="sr-only">LinkedIn</span>
               </Link>
@@ -37,27 +54,37 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/services/seo" className="text-gray-400 hover:text-primary transition-colors">
+                <Link
+                  href="/services/seo"
+                  className="text-gray-400 hover:text-primary transition-colors">
                   SEO Optimization
                 </Link>
               </li>
               <li>
-                <Link href="/services/social-media" className="text-gray-400 hover:text-primary transition-colors">
+                <Link
+                  href="/services/social-media"
+                  className="text-gray-400 hover:text-primary transition-colors">
                   Social Media Marketing
                 </Link>
               </li>
               <li>
-                <Link href="/services/web-development" className="text-gray-400 hover:text-primary transition-colors">
+                <Link
+                  href="/services/web-development"
+                  className="text-gray-400 hover:text-primary transition-colors">
                   Web Development
                 </Link>
               </li>
               <li>
-                <Link href="/services/email-marketing" className="text-gray-400 hover:text-primary transition-colors">
+                <Link
+                  href="/services/email-marketing"
+                  className="text-gray-400 hover:text-primary transition-colors">
                   Email Marketing
                 </Link>
               </li>
               <li>
-                <Link href="/services/ai" className="text-gray-400 hover:text-primary transition-colors">
+                <Link
+                  href="/services/ai"
+                  className="text-gray-400 hover:text-primary transition-colors">
                   AI Solutions
                 </Link>
               </li>
@@ -68,22 +95,28 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/about" className="text-gray-400 hover:text-primary transition-colors">
+                <Link
+                  href="/about"
+                  className="text-gray-400 hover:text-primary transition-colors">
                   About Us
                 </Link>
               </li>
-              <li>
+              {/* <li>  temporary off blogs
                 <Link href="/blog" className="text-gray-400 hover:text-primary transition-colors">
                   Blog
                 </Link>
-              </li>
+              </li> */}
               <li>
-                <Link href="/careers" className="text-gray-400 hover:text-primary transition-colors">
+                <Link
+                  href="/careers"
+                  className="text-gray-400 hover:text-primary transition-colors">
                   Careers
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-gray-400 hover:text-primary transition-colors">
+                <Link
+                  href="/contact"
+                  className="text-gray-400 hover:text-primary transition-colors">
                   Contact Us
                 </Link>
               </li>
@@ -95,11 +128,13 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <MapPin className="mr-2 h-5 w-5 text-primary shrink-0" />
-                <span className="text-gray-400">123 Digital Avenue, Tech City, 10001</span>
+                <span className="text-gray-400">
+                  Bhopal, Madhya Pradesh, India
+                </span>
               </li>
               <li className="flex items-center">
                 <Phone className="mr-2 h-5 w-5 text-primary shrink-0" />
-                <span className="text-gray-400">+1 (555) 123-4567</span>
+                <span className="text-gray-400">+91 9399570554</span>
               </li>
               <li className="flex items-center">
                 <Mail className="mr-2 h-5 w-5 text-primary shrink-0" />
@@ -114,18 +149,24 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} AdfinityHub. All rights reserved.
           </p>
           <div className="flex space-x-6">
-            <Link href="/privacy" className="text-gray-500 hover:text-primary text-sm transition-colors">
+            <Link
+              href="/privacy"
+              className="text-gray-500 hover:text-primary text-sm transition-colors">
               Privacy Policy
             </Link>
-            <Link href="/terms" className="text-gray-500 hover:text-primary text-sm transition-colors">
+            <Link
+              href="/terms"
+              className="text-gray-500 hover:text-primary text-sm transition-colors">
               Terms of Service
             </Link>
-            <Link href="/sitemap" className="text-gray-500 hover:text-primary text-sm transition-colors">
+            <Link
+              href="/sitemap"
+              className="text-gray-500 hover:text-primary text-sm transition-colors">
               Sitemap
             </Link>
           </div>
         </div>
       </div>
     </footer>
-  )
+  );
 }
