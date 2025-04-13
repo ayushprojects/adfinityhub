@@ -131,13 +131,13 @@ export default function AboutPage() {
             className="bg-gradient-to-br from-[#0c0515]/90 to-[#1a1030]/90 rounded-2xl p-8 border border-purple-500/20">
             <h2 className="text-2xl font-bold mb-4">Who We Are</h2>
             <p className="text-gray-300 mb-6">
-              ADFINITYHUB is a full-service digital growth agency, born from the
-              powerful collaboration between Ayush, a skilled web developer and
-              natural sales strategist, and Damanpreet, a digital marketing
-              expert with over 5 years of experience in SEO, email marketing,
-              and high-performing funnels. Together, they've built more than
-              just an agency — they've built a hub where ideas, AI, and strategy
-              converge to help businesses grow, globally.
+              DFINITYHUB is a full-service digital growth agency, born from the
+              powerful collaboration between a skilled web developer with a
+              flair for sales strategy and a digital marketing expert with over
+              5 years of experience in SEO, email marketing, and high-performing
+              funnels. Together, they’ve built more than just an agency —
+              they’ve created a hub where ideas, AI, and strategy converge to
+              help businesses grow, globally.
             </p>
             <p className="text-gray-300">
               We serve small to medium-sized businesses across India, USA, UK,
