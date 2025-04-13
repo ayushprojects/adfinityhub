@@ -137,7 +137,7 @@ export default function AboutPage() {
               5 years of experience in SEO, email marketing, and high-performing
               funnels. Together, they’ve built more than just an agency —
               they’ve created a hub where ideas, AI, and strategy converge to
-              help businesses grow, globally.
+              help businesses grow globally.
             </p>
             <p className="text-gray-300">
               We serve small to medium-sized businesses across India, USA, UK,
