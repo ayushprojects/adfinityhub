@@ -225,13 +225,13 @@ export default function ContactPage() {
                     <motion.p
                       className="text-gray-400 hover:text-indigo-300 transition-colors"
                       whileHover={{ scale: 1.01 }}>
-                      <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                      <a href="tel:+91 9399630197">+91 9399630197</a>
                     </motion.p>
-                    <motion.p
+                    {/* <motion.p
                       className="text-gray-400 hover:text-indigo-300 transition-colors"
                       whileHover={{ scale: 1.01 }}>
                       <a href="tel:+15559876543">+1 (555) 987-6543</a>
-                    </motion.p>
+                    </motion.p> */}
                   </div>
                 </motion.div>
               </CardContent>
@@ -249,11 +249,11 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-medium text-lg mb-1">Address</h3>
                     <p className="text-gray-400">
-                      123 Digital Avenue
+                      Bhopal
                       <br />
-                      Tech City, CA 10001
+                      Madhya Pradesh
                       <br />
-                      United States
+                      India
                     </p>
                   </div>
                 </motion.div>
