@@ -225,7 +225,7 @@ export default function ContactPage() {
                     <motion.p
                       className="text-gray-400 hover:text-indigo-300 transition-colors"
                       whileHover={{ scale: 1.01 }}>
-                      <a href="tel:+91 9399630197">+91 9399630197</a>
+                      <a href="tel:+91 7709114202">+91 7709114202</a>
                     </motion.p>
                     {/* <motion.p
                       className="text-gray-400 hover:text-indigo-300 transition-colors"
@@ -249,9 +249,9 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-medium text-lg mb-1">Address</h3>
                     <p className="text-gray-400">
-                      Bhopal
+                      Bhopal,
                       <br />
-                      Madhya Pradesh
+                      Madhya Pradesh,
                       <br />
                       India
                     </p>

@@ -137,7 +137,7 @@ export default function Navbar() {
           <div className="md:hidden flex items-center space-x-3">
             {/* Direct Call Button for Mobile */}
             <a
-              href="tel:+919399630197"
+              href="tel:+917709114202"
               className="flex items-center justify-center bg-gradient-to-r from-purple-600 to-indigo-600 p-2 rounded-full text-white hover:from-purple-700 hover:to-indigo-700 transition-colors"
               aria-label="Call us">
               <Phone className="h-5 w-5" />
@@ -234,11 +234,11 @@ export default function Navbar() {
 
             {/* Call Button in Mobile Menu */}
             <a
-              href="tel:+919399630197"
+              href="tel:+917709114202"
               className="flex items-center text-sm font-medium text-gray-300 hover:text-purple-400 hover:translate-x-1 transition-all duration-300"
               onClick={() => setIsOpen(false)}>
               <Phone className="h-4 w-4 mr-2" />
-              +91 9399 630 197
+              +91 7709114202
             </a>
 
             <Button
